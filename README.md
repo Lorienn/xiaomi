@@ -10,13 +10,24 @@
 
 
 ## 项目使用说明
-1.  下载该代码
-2.  确认本机是否安装Apache服务器。若未安装可下载PHPnow集成包。
+1. 下载该代码
+2. 确认本机是否安装Apache服务器。若未安装可下载PHPnow集成包
 
-> PHPnow集成安装包下载地址： http://servkit.org/download
+> PHPnow集成安装包下载地址： http://servkit.org/download <br />
+> PHPnow安装教程：https://jingyan.baidu.com/article/ad310e80ea8acb1849f49eb8.html
 
-
-3.  通过 http://localhost:80(apache默认端口号)  加载项目
+3. 通过 http://localhost:80 加载项目(80为apache默认端口号)
+4. 首次使用登陆/注册功能需先在本地apache服务器上搭建数据库，过程如下：
+```sql
+CREATE DATABASE `xiaomi`;
+CREATE TABLE `xiaomi`.`users` (
+`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`username` VARCHAR( 50 ) NOT NULL ,
+`password` VARCHAR( 50 ) NOT NULL ,
+`ctime` BIGINT( 20 ) NOT NULL
+) ENGINE = MYISAM CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+```
+<br />
 
 ## 项目功能
 > #### （建议使用chrome浏览器查看）
