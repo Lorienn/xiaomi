@@ -1,4 +1,4 @@
-# xiaomi
+# 小米商城
 ## 项目简介
 > 本项目是基于原生JavaScript等前端技术实现的仿小米电商网站。本项目使用的前端代码设计技术栈有jQuery、SCSS、Gulp构建工具、Require.JS模块化开发，后台构造技术包括PHP、MySQL。
 > <br />
