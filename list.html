@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>小米商城 - 小米10 Pro、Redmi K30、小米MIX Alpha，小米电视官方网站</title>
+        <meta name="description" content="小米官网直营小米公司旗下所有产品，包括小米手机系列小米10 Pro 、小米9、小米MIX Alpha，Redmi 红米系列Redmi K30、Redmi Note 8 Pro，小米电视、笔记本、米家智能家居等，同时提供小米客户服务及售后支持." />
+        <meta name="keywords" content="小米,redmi,小米10,Redmi K30,小米MIX Alpha,小米商城" />
+        <link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/list.css"/>
+        <script src = 'js/require.js' defer async = 'true' data-main = 'js/list.js'></script>
+    </head>
+    <body>
+        <div id = 'app'>
+            <div>
+                <div class = 'header'>
+                    <div class = 'site-topbar'>
+                        <div class = 'container'>
+                            <div class = 'topbar-nav'>
+                                <a rel="nofollow"  href="#" >小米商城</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">MIUI</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">IoT</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">云服务</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">金融</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">有品</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">小爱开放平台</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">企业团购</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank">资质证照</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank"  >协议规则</a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="#" target="_blank" class="topbar-download" id="J_siteDownloadApp">
+                                    下载app
+                                    <span class="appcode">
+                                        <img src="//i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="小米商城" width="90" height="90">
+                                        小米商城APP
+                                    </span>
+                                </a>
+                                <span class="sep">|</span>
+                                <a rel="nofollow" href="javascript:;"  class="J_siteGlobalRegion">Select Location</a>
+                            </div>
+                            <div class = 'topbar-cart' id = 'J_miniCartTrigger'>
+                                <a href="shopCart.html" rel="nofollow" class="cart-mini" id="J_miniCartBtn">
+                                    <em class="iconfont-cart"></em><em class="iconfont-cart-full hide"></em>购物车
+                                    <em class = 'iconfont-cart-full hide'></em>
+                                    <span class = 'cart-mini-num J_cartNum'></span>
+                                </a>
+                                <div class="cart-menu" id="J_miniCartMenu">
+                                    <div class="menu-content">
+                                        <div class="loading"><div class="loader"></div></div>
+                                        <ul class="cart-list hide" id="J_miniCartList"></ul>
+                                        <div class="cart-total clearfix hide" id="J_miniCartListTotal"></div>
+                                        <div class="msg msg-error hide"></div>
+                                        <div class="msg msg-empty hide">购物车中还没有商品，赶紧选购吧！</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = 'topbar-info' id = 'J_siteUserInfo'>
+                                <a href="login.html" class = 'link' >登录</a>
+                                <span class = 'sep'>|</span>
+                                <a href="register.html" class = 'link'>注册</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = 'site-header'>
+                        <div class = 'container'>
+                            <div class = 'header-logo'>
+                                <a class="logo ir" href="index.html" title="小米官网">小米官网</a>
+                            </div>
+                            <!-- 侧边栏 -->
+                            <div class = 'header-nav'>
+                                <ul class = 'nav-list J_navMainList clearfix'>
+                                    <li id = 'J_navCategory' class = 'nav-category'>
+                                        <a href="#" class = 'link-category'>
+                                            <span class = 'text'>全部商品分类</span>
+                                        </a>
+                                        <div class = 'site-category' style="display: none">
+                                            <ul id = 'J_categoryList' class = 'site-category-list clearfix site-category-list-custom'></ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class = 'header-search'>
+                                <form action="J_searchForm" class = 'search-form clearfix'>
+                                    <input type="search" id = 'search' name = 'keyword' autocomplete = "off" class = 'search-text'/>
+                                    <input type="submit"  value="" class = 'search-btn iconfont'/>
+                                    <div id="J_keywordList" class="keyword-list hide">
+                                        <ul class="result-list">
+                                            <li data-key="小米 9">
+                                                <a href="//search.mi.com/search_%E5%B0%8F%E7%B1%B3%209">
+                                                    <span class="keyword"></span> 
+                                                    小米 9
+                                                </a>
+                                            </li>
+                                            <li data-key="Redmi K20 pro">
+                                                <a href="//search.mi.com/search_Redmi%20K20%20pro">
+                                                    <span class="keyword"></span>
+                                                     Redmi K20 pro
+                                                </a>
+                                            </li>
+                                            <li data-key="Redmi K20">
+                                                <a href="//search.mi.com/search_Redmi%20K20">
+                                                    <span class="keyword"></span> 
+                                                    Redmi K20
+                                                </a>
+                                            </li>
+                                            <li data-key="Redmi Note 7 Pro">
+                                                <a href="//search.mi.com/search_Redmi%20Note%207%20Pro">
+                                                    <span class="keyword"></span> 
+                                                    Redmi Note 7 Pro
+                                                </a>
+                                            </li>
+                                            <li data-key="Redmi&nbsp;note&nbsp;7">
+                                                <a href="//search.mi.com/search_Redmi%26nbsp%3Bnote%26nbsp%3B7">
+                                                    <span class="keyword"></span> 
+                                                    Redmi&nbsp;note&nbsp;7
+                                                </a>
+                                            </li>
+                                            <li data-key="小米电视4c">
+                                                <a href="//search.mi.com/search_%E5%B0%8F%E7%B1%B3%E7%94%B5%E8%A7%864c">
+                                                    <span class="keyword"></span> 
+                                                    小米电视4c
+                                                </a>
+                                            </li>
+                                            <li data-key="电视32英寸">
+                                                <a href="//search.mi.com/search_%E7%94%B5%E8%A7%8632%E8%8B%B1%E5%AF%B8">
+                                                    <span class="keyword"></span> 
+                                                    电视32英寸
+                                                </a>
+                                            </li>
+                                            <li data-key="笔记本pro">
+                                                <a href="//search.mi.com/search_%E7%AC%94%E8%AE%B0%E6%9C%ACpro">
+                                                    <span class="keyword"></span> 
+                                                    笔记本pro
+                                                </a>
+                                            </li>
+                                            <li data-key="小爱音箱">
+                                                <a href="//search.mi.com/search_%E5%B0%8F%E7%88%B1%E9%9F%B3%E7%AE%B1">
+                                                    <span class="keyword"></span> 
+                                                    小爱音箱
+                                                </a>
+                                            </li>
+                                            <li data-key="净水器">
+                                                <a href="//search.mi.com/search_%E5%87%80%E6%B0%B4%E5%99%A8">
+                                                    <span class="keyword"></span> 
+                                                    净水器
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id = 'J_navMenu' class="header-nav-menu header-nav-menu-active slide-up" style = 'display: none'>
+                            <div class = 'container'>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 商品列表部分 -->
+        <div class = "page-main channel-page">
+            <div class = 'app-body'>
+                <a data-v-61428f58  href="javascript:void(0);" class = 'return iconfont' onclick = "_msq.push(['trackEvent', '2c573917a333c7fe-a1196d204b4e5fe0', 'javascript:void0', 'pcpid', '']);"></a>
+                <div data-v-61428f58 class = 'section'>
+                    <div data-v-61428f58 class="components-list-box" >
+                        <div class = 'gallery-box'>
+                            <div data-v-43834550 class = 'gallery-one' style = 'height: 620px;'>
+                                <div data-v-43834550 class = 'swiper-container swiper-container-initialized swiper-container-horizontal' style = 'height: 620px; width: 2560px; position: relative; left: 50%; margin-left: -1280px;'>
+                                    <!-- 轮播图数据 -->
+                                    <div data-v-43834550 class = 'swiper-wrapper' >
+                                        <div data-v-43834550 class = 'swiper-slide swiper-slide-active'>
+                                            <a href="goodsDesc.html?product_id=10000151">
+                                                <img style = 'height: 620px; padding-bottom: 2560px; position: relative; left: 50%; margin-left: -1280px;' src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/60c458607b4b3ce197127d47e277e178.jpg?w=5120&h=1240&bg=B8ADD9" class = 'swiper-lazy swiper-lazy-loaded' alt=""/>
+                                            </a>
+                                        </div>
+                                        <div data-v-43834550 class = 'swiper-slide swiper-slide-active'>
+                                            <a href="goodsDesc.html?product_id=10000151">
+                                                <img style = 'height: 620px; padding-bottom: 2560px; position: relative; left: 50%; margin-left: -1280px;' src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/96d0be92253c174e068b86970fa72c76.jpg?w=5120&h=1240&bg=D2CAEB" class = 'swiper-lazy swiper-lazy-loaded' alt=""/>
+                                            </a>
+                                        </div>
+                                        <div data-v-43834550 class = 'swiper-slide swiper-slide-active'>
+                                            <a href="goodsDesc.html?product_id=10000151">
+                                                <img style = 'height: 620px; padding-bottom: 2560px; position: relative; left: 50%; margin-left: -1280px;' src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/60c458607b4b3ce197127d47e277e178.jpg?w=5120&h=1240&bg=B8ADD9" class = 'swiper-lazy swiper-lazy-loaded' alt=""/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 轮播图指示按钮 -->
+                                    <div data-v-43834550 class = 'swiper-pagination swiper-pagination-clickable swiper-pagination-bullets'>
+                                        <a href="" class = 'swiper-pagination-bullet swiper-pagination-bullet-active'></a>
+                                        <a href="" class = 'swiper-pagination-bullet'></a>
+                                    </div>
+                                    <!-- 上一页和下一页按钮 -->
+                                    <div data-v-43834550 class = 'swiper-button-prev' aria-label="Previous slide"></div>
+                                    <div data-v-43834550 class = 'swiper-button-next' aria-label="Next slide"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-v-61428f58 class = 'section'>
+                    <div data-v-61428f58 class = 'components-list-box'>
+                        <div data-v-0747c611 class = 'channel-lable'>
+                            <div data-v-0747c611 class = 'channel-title'>
+                                <h2 data-v-0747c611 >明星产品</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <tool-bar :bar-data="toolBarData"></tool-bar>
+
+        <div ref="J_siteFooter">
+        <div class="site-footer">
+        <div class="container">
+            <div class="footer-service">
+                <ul class="list-service clearfix">
+                    <li><a rel="nofollow" href="//www.mi.com/static/fast/" target="_blank"><em class="iconfont-tool"></em>预约维修服务</a></li>
+                    <li><a rel="nofollow" href="//www.mi.com/service/exchange#back" target="_blank"><em class="iconfont-circle-7"></em>7天无理由退货</a></li>
+                    <li><a rel="nofollow" href="//www.mi.com/service/exchange#back" target="_blank"><em class="iconfont-circle-15"></em>15天免费换货</a></li>
+                    <li><a rel="nofollow" href="//www.mi.com/service/buy/postage/" target="_blank"><em class="iconfont-gift"></em>满150元包邮</a></li>
+                    <li><a rel="nofollow" href="//www.mi.com/static/maintainlocation/" target="_blank"><em class="iconfont-location"></em>520余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="footer-links clearfix">
+                <dl class="col-links col-links-first">
+                    <dt>帮助中心</dt>
+                    <dd><a rel="nofollow" href="//www.mi.com/service/account/Account%20registration/"   target="_blank">账户管理</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/service/buy/SalesTime/"   target="_blank">购物指南</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/service/order/sendprogress/"   target="_blank">订单操作</a></dd>
+                </dl>
+
+                <dl class="col-links ">
+                    <dt>服务支持</dt>
+                    <dd><a rel="nofollow" href="//www.mi.com/service/exchange"   target="_blank">售后政策</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/service/"   target="_blank">自助服务</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/c/service/download/"   target="_blank">相关下载</a></dd>
+                </dl>
+
+                <dl class="col-links ">
+                    <dt>线下门店</dt>
+                    <dd><a rel="nofollow" href="//www.mi.com/c/xiaomizhijia/"   target="_blank">小米之家</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/static/maintainlocation/"   target="_blank">服务网点</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/static/familyLocation/"   target="_blank">授权体验店</a></dd>
+                </dl>
+
+                <dl class="col-links ">
+                    <dt>关于小米</dt>
+                    <dd><a rel="nofollow" href="//www.mi.com/about/"   target="_blank">了解小米</a></dd>
+                    <dd><a rel="nofollow" href="//hr.xiaomi.com/"   target="_blank">加入小米</a></dd>
+                    <dd><a rel="nofollow" href="//company.mi.com/zh-cn/ir/indexContent/index.html"   target="_blank">投资者关系</a></dd>
+                </dl>
+
+                <dl class="col-links ">
+                    <dt>关注我们</dt>
+                    <dd><a rel="nofollow" href="https://weibo.com/xiaomishangcheng"   target="_blank">新浪微博</a></dd>
+                    <dd><a rel="nofollow" href="javascript:void(0);" id="J_siteWeixinCode">官方微信</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/about/contact/"   target="_blank">联系我们</a></dd>
+                </dl>
+
+                <dl class="col-links ">
+                    <dt>特色服务</dt>
+                    <dd><a rel="nofollow" href="//www.mi.com/order/fcode"   target="_blank">F 码通道</a></dd>
+                    <dd><a rel="nofollow" href="//www.mi.com/order/giftcode"   target="_blank">礼物码</a></dd>
+                    <dd><a rel="nofollow" href="//order.mi.com/service/imei"   target="_blank">防伪查询</a></dd>
+                </dl>
+
+                <div class="col-contact">
+                    <p class="phone">400-100-5678</p>
+                    <p>周一至周日 8:00-18:00<br>（仅收市话费）</p>
+                    <a rel="nofollow" class="btn btn-line-primary btn-small" href="//support.kefu.mi.com/" target="_blank"><em class="iconfont-message2"></em> 人工客服</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="site-info">
+        <div class="container">
+            <div class="logo ir">小米官网</div>
+            <div class="info-text">
+                <p class="sites">
+                    <a rel="nofollow" href="//www.mi.com/index.html"   target="_blank">小米商城</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://www.miui.com/"   target="_blank">MIUI</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://home.mi.com/index.html"   target="_blank">米家</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="http://www.miliao.com/"   target="_blank">米聊</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://www.duokan.com/"   target="_blank">多看</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="http://game.xiaomi.com/"   target="_blank">游戏</a>
+                    <span class="sep">|</span><a rel="nofollow" href="http://www.miwifi.com/"   target="_blank">路由器</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//www.mi.com/micard/"   target="_blank">米粉卡</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://b.mi.com/?client_id=180100031058&masid=17409.0358"   target="_blank">政企服务</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://xiaomi.tmall.com/"   target="_blank">小米天猫店</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//privacy.mi.com/all/zh_CN/"   target="_blank">小米集团隐私政策</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/ded8d0e4a77d.html"   target="_blank">小米商城隐私政策</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//www.mi.com/about/user-agreement/"   target="_blank">小米商城用户协议</a>
+                
+
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//static.mi.com/feedback/"   target="_blank">问题反馈</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="//www.mi.com/jiancha/"   target="_blank">廉正举报</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="https://integrity.mi.com/"   target="_blank">诚信合规</a>
+                    <span class="sep">|</span>
+                    <a rel="nofollow" href="javascript:void(0);" class="J_siteGlobalRegion">Select Location</a>
+                </p>
+                <p>
+                    &copy;
+                    <a href=" " target="_blank" title="mi.com">mi.com</a> 京ICP证110507号
+                    <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow">京ICP备10046444号</a>
+                    <a rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank">京公网安备11010802020134号 </a>
+                    <a href="//www.mi.com/culture-license/" target="_blank">京网文[2017]1530-131号</a> <br>
+                    <a href="//www.mi.com/medical/record/" target="_blank">（京）网械平台备字（2018）第00005号
+                    </a>
+                    <a href="//www.mi.com/medical/qualification/" target="_blank">互联网药品信息服务资格证 (京) -非经营性-2014-0090
+                    </a>
+                    <a href="//www.mi.com/business-license/" target="_blank">营业执照</a>
+                    <a href="//www.mi.com/medical/list/" target="_blank">医疗器械公告</a>
+                    <br>
+                    <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/af5b8ef38e7d57c5ee7fa4289ccf4df8.png" target="_blank">增值电信业务许可证</a>&nbsp;
+                    网络食品经营备案（京）【2018】WLSPJYBAHF-12  &nbsp;
+                    <a href="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe7383e11127caea371f17156f429a1e.png" target="_blank">食品经营许可证</a>
+                    <br>违法和不良信息举报电话：185-0130-1238 <a href= 'https://www.mi.com/static/intellectual/index.html' target="_blank">知识产权侵权投诉</a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                </p>
+            </div>
+            <div class="info-links">
+                <a  rel="nofollow" href="//privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn" target="_blank">
+                    <img  rel="nofollow" src="//i1.mifile.cn/f/i/17/site/truste.png" alt="TRUSTe Privacy Certification" />
+                </a>
+                <a  rel="nofollow" href="//search.szfw.org/cert/l/CX20120926001783002010" target="_blank">
+                    <img  rel="nofollow" src="//s01.mifile.cn/i/v-logo-2.png" alt="诚信网站" />
+                </a>
+                <a  rel="nofollow" href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&ct=df&pa=461082" target="_blank">
+                    <img  rel="nofollow" src="//s01.mifile.cn/i/v-logo-1.png" alt="可信网站" />
+                </a>
+                <a  rel="nofollow" href="http://www.315online.com.cn/member/315140007.html" target="_blank">
+                    <img  rel="nofollow" src="//s01.mifile.cn/i/v-logo-3.png" alt="网上交易保障中心" />
+                </a>
+                <a  rel="nofollow" href="https://www.mi.com/service/buy/commitment/" target="_blank">
+                    <img  rel="nofollow" src="//i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="诚信经营 放心消费" />
+                </a>
+            </div>
+        </div>
+        <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+        </div>
+    </body>
+</html>
